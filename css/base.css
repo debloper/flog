@@ -57,7 +57,7 @@ body > * {
 	margin:				auto;
 }
 header {
-	padding:			4rem 0 2rem;
+	padding:			4rem 0 0;
 	text-align:			center;
 	font-family:		"Open Sans Condensed", Sans-serif;
 }
@@ -67,15 +67,12 @@ hgroup {
 hgroup h1 {
 	font-size:			4rem;
 	line-height:		3rem;
+	margin-bottom:		1rem;
 	letter-spacing:		-4px;
 	text-transform:		uppercase;
 }
 nav {
-	font-size:			2rem;
 	position:			relative;
-}
-nav div {
-	display:			inline-block;
 }
 nav a {
 	width:				3em;
@@ -85,12 +82,23 @@ nav a {
 	border-width:		1px 0;
 	display:			inline-block;
 }
+section {
+	text-align: 		justify;
+	-ms-text-justify:	distribute-all-lines;
+	text-justify:		distribute-all-lines;
+}
+section aside {
+	text-align:			right;
+}
 
 /* 3. ID & Class */
 
 
 /* 4. Pseudoclass */
-nav:after {
+.inlineBlock > * {
+	display:			inline-block;
+}
+.inlineBlock:after {
 	width:				100%;
 	height:				0;
 	font-size:			0;
@@ -101,28 +109,41 @@ nav:after {
 }
 
 /* 5. Media Queries */
-@media screen and (min-width: 450px) {
-	body > * {
-		width:			100%;
-	}
+@media screen and (max-width: 449px) {
+	body > * { width: 100%; }
 	nav {
+		font-size:		1rem;
 		text-align:		center;
 	}
+	section.inlineBlock article { width: 100%; }
+	section.inlineBlock aside { display: none; }
+}
+@media screen and (min-width: 450px) {
+	body > * { width: 100%; }
+	nav {
+		font-size:		1.5rem;
+		text-align:		center;
+	}
+	section.inlineBlock article { width: 100%; }
+	section.inlineBlock aside { display: none; }
 }
 @media screen and (min-width: 700px) {
-	body > * {
-		width:			100%;
-	}
 	nav {
+		font-size:		2rem;
 		text-align:		center;
+	}
+	section.inlineBlock article { width: 70%; }
+	section.inlineBlock aside {
+		width:			25%;
+		display:		inline-block;
 	}
 }
 @media screen and (min-width: 1000px) {
-	body > * {
-		width:			800px;
-	}
+	body > * { width: 800px; }
 	nav {
-		top:			-3rem;
+		top:			-4rem;
 		text-align:		justify;
 	}
+	section.inlineBlock article { width: 600px; }
+	section.inlineBlock aside { width: 180px; }
 }
