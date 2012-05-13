@@ -90,6 +90,9 @@ section {
 section aside {
 	text-align:			right;
 }
+footer {
+	text-align:			center;
+}
 
 /* 3. ID & Class */
 
@@ -106,6 +109,17 @@ section aside {
 	visibility:			hidden;
 	content:			".";
 	display:			inline-block;
+}
+#copyleft span {
+	font-size:			120%;
+	margin:				1em auto;
+	font-weight:		bold;
+	display:			inline-block;
+	-webkit-transform:	scaleX(-1);
+	-moz-transform:		scaleX(-1);
+	-ms-transform:		scaleX(-1);
+	-o-transform:		scaleX(-1);
+	transform:			scaleX(-1);
 }
 
 /* 5. Media Queries */
