@@ -38,3 +38,15 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
 	margin:				0;
 }
+
+/* 1. Imports */
+/**
+ * On a second thought, I'll just import the fonts with <link>
+ * tags in the HTML itself, for following reasons:
+ *
+ * I. Numerous @font-face declarations are too messy to deal with
+ * II. Adding @import rules in here will break parallel downloads
+ * III. Using <style> & @import in HTML itself is again, pathetic
+ *
+ * Till I figure out something better, let's keep it this way.
+ */
