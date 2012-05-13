@@ -19,7 +19,7 @@ body {
 	margin:				0;
 	padding:			0;
 	font-size:			16px;
-	font-family:		Sans-serif;
+	font-family:		"Open Sans", Sans-serif;
 	overflow-y:			scroll;
 	-webkit-transform:	translateZ(0);
 	-moz-transform:		translateZ(0);
@@ -37,6 +37,7 @@ a:hover {
 }
 h1, h2, h3, h4, h5, h6 {
 	margin:				0;
+	font-family:		"Open Sans Condensed", Sans-serif;
 }
 
 /* 1. Imports */
@@ -50,3 +51,35 @@ h1, h2, h3, h4, h5, h6 {
  *
  * Till I figure out something better, let's keep it this way.
  */
+
+/* 2. Elements */
+body > * {
+	margin:				auto;
+}
+header {
+	font-family:		"Open Sans Condensed", Sans-serif;
+}
+
+/* 3. ID & Class */
+#title {
+	text-align:			center;
+}
+
+/* 4. Pseudoclass */
+
+/* 5. Media Queries */
+@media screen and (min-width: 450px) {
+	body > * {
+		width:			100%;
+	}
+}
+@media screen and (min-width: 700px) {
+	body > * {
+		width:			100%;
+	}
+}
+@media screen and (min-width: 1000px) {
+	body > * {
+		width:			800px;
+	}
+}
