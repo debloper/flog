@@ -11,3 +11,30 @@
  * 4. Pseudoclass
  * 5. Media Queries
  */
+
+/* 0. Reset */
+* { box-sizing: border-box; }
+body {
+	width:				100%;
+	margin:				0;
+	padding:			0;
+	font-size:			16px;
+	font-family:		Sans-serif;
+	overflow-y:			scroll;
+	-webkit-transform:	translateZ(0);
+	-moz-transform:		translateZ(0);
+	-ms-transform:		translateZ(0);
+	-o-transform:		translateZ(0);
+	transform:			translateZ(0);
+}
+a {
+	color:				#79B;
+	outline:			0;
+	text-decoration:	none;
+}
+a:hover {
+	color:				#E73;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin:				0;
+}
