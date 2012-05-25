@@ -10,12 +10,12 @@ ASCII art, in here -->
 	<meta name="viewport" content="width=device-width">
 
 	<!-- here comes the title -->
-	<title>Welcome to DEBlog</title>
+	<title>{{ page.title }} &mdash; DEBlog</title>
 
 	<!-- insert favicon down below -->
 
 	<!-- let's fetch the stylesheets -->
-	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" href="/css/base.css" />
 	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300'>
 	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic'>
 
@@ -43,8 +43,12 @@ ASCII art, in here -->
 	</header>
 
 	<section class="inlineBlock">
-		<article>Hi There!</article>
-		<aside>'Sup mate?</aside>
+		<article>
+{{ content }}
+		</article>
+		<aside>
+			Sidebar contents come here...
+		</aside>
 	</section>
 
 	<footer>
