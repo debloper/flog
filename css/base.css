@@ -98,6 +98,16 @@ footer {
 
 
 /* 4. Pseudoclass */
+article a {
+	padding:			4px 8px;
+	display:			block;
+}
+article a:nth-child(odd) {
+	background-color:	#f0f0f0;
+}
+article a:nth-child(even) {
+	background-color:	#ffffff;
+}
 .inlineBlock > * {
 	display:			inline-block;
 }
