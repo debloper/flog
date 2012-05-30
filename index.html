@@ -2,6 +2,14 @@
 layout: template
 title: "Welcome"
 ---
+	{% for post in site.posts %}
+			<a href="{{ post.url }}">
+				<time datetime="">
+					{{ post.date | date_to_string }}
+				</time>
+				<span>{{ post.title }}</span>
+			</a>
+	{% endfor %}
 	<style>
 	article a {
 		padding:	0.5rem 1rem;
@@ -17,11 +25,3 @@ title: "Welcome"
 		float:		right;
 	}
 	</style>
-	{% for post in site.posts %}
-			<a href="{{ post.url }}">
-				<time datetime="">
-					{{ post.date | date_to_string }}
-				</time>
-				<span>{{ post.title }}</span>
-			</a>
-	{% endfor %}
