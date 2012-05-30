@@ -2,11 +2,26 @@
 layout: template
 title: "Welcome"
 ---
-<ul>
+	<style>
+	article a {
+		padding:	0.5rem 1rem;
+		display:	block;
+	}
+	article a:nth-child(odd) {
+		background:	#f0f0f0;
+	}
+	article a:nth-child(even) {
+		background:	#ffffff;
+	}
+	article a time {
+		float:		right;
+	}
+	</style>
 	{% for post in site.posts %}
-	<li>
-		<time datetime="{{ post.date }}">{{ post.date | date_to_string }}</time>
-		<a href="{{ post.url }}">{{ post.title }}</a>
-	</li>
+			<a href="{{ post.url }}">
+				<time datetime="">
+					{{ post.date | date_to_string }}
+				</time>
+				<span>{{ post.title }}</span>
+			</a>
 	{% endfor %}
-</ul>

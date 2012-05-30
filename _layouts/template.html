@@ -47,7 +47,16 @@ ASCII art, in here -->
 {{ content }}
 		</article>
 		<aside>
-			Sidebar contents come here...
+			<div class="portal">
+				<div>Featured Posts</div>
+			{% for post in site.posts %}
+				<a href="{{ post.url }}">» {{ post.title }}</a>
+			{% endfor %}
+			</div>
+			<div class="portal">
+				<div>Contents aren't interesting?</div>
+				<a href="http://debloper.blogspot.com" target="_blank">Looking for my OpenSource Blog?</a>
+			</div>
 		</aside>
 	</section>
 
