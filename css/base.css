@@ -13,7 +13,10 @@
  */
 
 /* 0. Reset */
-* { box-sizing: border-box; }
+* {
+	-moz-box-sizing:	border-box;
+	box-sizing:			border-box;
+}
 body {
 	width:				100%;
 	margin:				0;
@@ -95,14 +98,30 @@ article a time {
 	float:				right;
 }
 section aside {
-	text-align:			right;
+	padding-left:		1rem;
 }
 footer {
 	text-align:			center;
 }
 
 /* 3. ID & Class */
-
+.sidebox {
+	margin-bottom:		1rem;
+	border:				1px solid #ddd;
+	border-radius:		4px;
+}
+.sidebox div {
+	color:				#678;
+	padding:			0.6rem 1rem;
+	background:			#f0f0f0;
+	border-bottom:		1px solid #ddd;
+	border-radius:		4px 4px 0 0;
+}
+.sidebox a {
+	padding:			0.5rem 0.5rem 0.5rem 1rem;
+	display:			block;
+	font-size:			0.8rem;
+}
 
 /* 4. Pseudoclass */
 article a:nth-child(odd) {
@@ -167,11 +186,11 @@ article a:nth-child(even) {
 	}
 }
 @media screen and (min-width: 1000px) {
-	body > * { width: 800px; }
+	body > * { width: 960px; }
 	nav {
 		top:			-4rem;
 		text-align:		justify;
 	}
-	section.inlineBlock article { width: 600px; }
-	section.inlineBlock aside { width: 180px; }
+	section.inlineBlock article { width: 680px; }
+	section.inlineBlock aside { width: 280px; }
 }
