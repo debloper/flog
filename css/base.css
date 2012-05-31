@@ -98,6 +98,21 @@ footer {
 }
 
 /* 3. ID & Class */
+#copyleft span {
+	font-size:			120%;
+	margin:				1em auto;
+	font-weight:		bold;
+	display:			inline-block;
+	-webkit-transform:	scaleX(-1);
+	-moz-transform:		scaleX(-1);
+	-ms-transform:		scaleX(-1);
+	-o-transform:		scaleX(-1);
+	transform:			scaleX(-1);
+}
+.inlineBlock > * {
+	display:			inline-block;
+	vertical-align:		top;
+}
 .portal {
 	margin-bottom:		1rem;
 	border:				1px solid #ddd;
@@ -117,10 +132,6 @@ footer {
 }
 
 /* 4. Pseudoclass */
-.inlineBlock > * {
-	display:			inline-block;
-	vertical-align:		top;
-}
 .inlineBlock:after {
 	width:				100%;
 	height:				0;
@@ -129,17 +140,6 @@ footer {
 	visibility:			hidden;
 	content:			".";
 	display:			inline-block;
-}
-#copyleft span {
-	font-size:			120%;
-	margin:				1em auto;
-	font-weight:		bold;
-	display:			inline-block;
-	-webkit-transform:	scaleX(-1);
-	-moz-transform:		scaleX(-1);
-	-ms-transform:		scaleX(-1);
-	-o-transform:		scaleX(-1);
-	transform:			scaleX(-1);
 }
 .portal a:before {
 	content:			"» ";
