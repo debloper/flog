@@ -1,0 +1,29 @@
+---
+layout: nil
+---
+<?xml version="1.0" ?>
+<rss version="2.0">
+<channel>
+	<title>Deb's Personal Weblog</title>
+	<link>http://blog.debs.io</link>
+	<lastBuildDate>
+		{{ site.time | %a, %d %b %Y %H:%M:%S %Z }}
+	</lastBuildDate>
+	<ttl>3600</ttl>
+
+	{% for post in site.posts %}
+	<item>
+		<title>{{ post.title }}</title>
+		<guid>http://blog.debs.io{{ post.url }}</guid>
+		<link>http://blog.debs.io{{ post.url }}</link>
+		<pubDate>
+			{{ post.date | %a, %d %b %Y %H:%M:%S %Z }}
+		</pubDate>
+		<description>
+			{{ post.content | xml_escape }}
+		</description>
+	</item>
+	{% endfor %}
+
+</channel>
+</rss>
