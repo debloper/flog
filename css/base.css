@@ -141,6 +141,9 @@ footer {
 	-o-transform:		scaleX(-1);
 	transform:			scaleX(-1);
 }
+.portal a:before {
+	content:			"» ";
+}
 
 /* 5. Media Queries */
 @media screen and (max-width: 449px) {
