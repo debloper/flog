@@ -25,9 +25,10 @@ layout: nil
 				href="http://blog.debs.io{{ post.url }}"/>
 		<title>{{ post.title }}</title>
 		<updated>{{ post.date | date_to_xmlschema }}</updated>
-		<content type="text/html">
+		<summary type="text/html">
 			{{ post.content | strip_html | truncatewords: 100 }}
-		</content>
+			[<a href="http://blog.debs.io{{ post.url }}">Read More</a>]
+		</summary>
 	</entry>
 	{% endfor %}
 

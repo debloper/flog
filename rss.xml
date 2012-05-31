@@ -21,6 +21,7 @@ layout: nil
 		</pubDate>
 		<description>
 			{{ post.content | strip_html | truncatewords: 100 }}
+			[<a href="http://blog.debs.io{{ post.url }}">Read More</a>]
 		</description>
 	</item>
 	{% endfor %}
