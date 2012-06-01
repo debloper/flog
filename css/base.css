@@ -130,6 +130,10 @@ footer {
 	display:			block;
 	font-size:			0.8rem;
 }
+.share iframe {
+	float:				right;
+	margin-top:			-3px;
+}
 
 /* 4. Pseudoclass */
 .inlineBlock:after {
