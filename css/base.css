@@ -105,6 +105,10 @@ footer {
 }
 
 /* 3. ID & Class */
+.share iframe {
+	float:				right;
+	margin-top:			-3px;
+}
 .sidebox {
 	margin-bottom:		1rem;
 	border:				1px solid #ddd;
