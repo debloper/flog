@@ -94,22 +94,22 @@ ASCII art, in here -->
 	</footer>
 
 	<script>
-	!function( d, s, id ) {
-		var js, fjs = d.getElementsByTagName(s)[0];
-		if( !d.getElementById(id) ) {
-			js = d.createElement(s);
-			js.id = id;
-			js.async = true;
-			js.src = "http://platform.twitter.com/widgets.js";
-			fjs.parentNode.insertBefore( js, fjs );
-		}
-	}( document, "script", "twitter-wjs");
-	(function() {
-		var dsq = document.createElement('script');
+	// Twitter Share Button Integration
+	(function( d, s, id ) {
+		var js = d.createElement(s);
+		js.id = id;
+		js.async = true;
+		js.src = "http://platform.twitter.com/widgets.js";
+		d.getElementsByTagName('head')[0].appendChild(js);
+	})( document, "script", "twitter-wjs");
+
+	// Disqus Commnet Thread Integration
+	(function( d ) {
+		var dsq = d.createElement('script');
 		dsq.async = true;
 		dsq.src = 'http://blogdebsio.disqus.com/embed.js';
-		document.getElementsByTagName('head')[0].appendChild(dsq);
-	})();
+		d.getElementsByTagName('head')[0].appendChild(dsq);
+	})(document);
 	</script>
 
 </body>
