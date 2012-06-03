@@ -3,7 +3,7 @@ layout: template
 title: "Welcome"
 ---
 	{% for post in site.posts %}
-			<a href="{{ post.url }}">
+			<a href="{{ post.url }}" class="post">
 				<time datetime="">
 					{{ post.date | date_to_string }}
 				</time>
@@ -11,17 +11,17 @@ title: "Welcome"
 			</a>
 	{% endfor %}
 			<style>
-			article a {
+			article .post {
 				padding:	0.5rem 1rem;
 				display:	block;
 			}
-			article a:nth-child(odd) {
+			article .post:nth-child(odd) {
 				background:	#f0f0f0;
 			}
-			article a:nth-child(even) {
+			article .post:nth-child(even) {
 				background:	#ffffff;
 			}
-			article a time {
+			article .post time {
 				float:		right;
 			}
 			</style>
