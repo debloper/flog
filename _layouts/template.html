@@ -60,6 +60,7 @@ ASCII art, in here -->
 	<section class="inlineBlock">
 		<article>
 {{ content }}
+		<div id="disqus_thread"></div>
 		</article><aside>
 			<div class="portal share">
 				<div>
@@ -103,6 +104,12 @@ ASCII art, in here -->
 			fjs.parentNode.insertBefore( js, fjs );
 		}
 	}( document, "script", "twitter-wjs");
+	(function() {
+		var dsq = document.createElement('script');
+		dsq.async = true;
+		dsq.src = 'http://blogdebsio.disqus.com/embed.js';
+		document.getElementsByTagName('head')[0].appendChild(dsq);
+	})();
 	</script>
 
 </body>
