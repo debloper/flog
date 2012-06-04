@@ -95,6 +95,9 @@ section {
 	-ms-text-justify:	distribute-all-lines;
 	text-justify:		distribute-all-lines;
 }
+section article {
+	margin:				0 auto 2rem;
+}
 article a {
 	padding:			8px 16px;
 	display:			block;
@@ -103,7 +106,7 @@ article a time {
 	float:				right;
 }
 section aside {
-	padding-left:		1rem;
+	padding:			0 1rem;
 }
 footer {
 	text-align:			center;
@@ -172,29 +175,24 @@ article a:nth-child(even) {
 	body > * { width: 100%; }
 	nav { font-size: 1rem; }
 	nav span.navLink a { margin: auto 4px; }
-	section.inlineBlock article { width: 100%; }
-	section.inlineBlock aside { display: none; }
+	section.inlineBlock > * { display: block; }
 }
 @media screen and (min-width: 450px) {
 	body > * { width: 100%; }
 	nav { font-size: 1.5rem; }
 	nav span.navLink a { margin: auto 4px; }
-	section.inlineBlock article { width: 100%; }
-	section.inlineBlock aside { display: none; }
+	section.inlineBlock > * { display: block; }
 }
 @media screen and (min-width: 700px) {
 	nav { font-size: 2rem; }
 	nav span.navLink a { margin: auto; }
-	section.inlineBlock article { width: 70%; }
-	section.inlineBlock aside {
-		width:			25%;
-		display:		inline-block;
-	}
+	section.inlineBlock > * { display: inline-block; }
+	section.inlineBlock article { width: 65%; }
+	section.inlineBlock aside { width: 35%; }
 }
 @media screen and (min-width: 1000px) {
 	body > * { width: 960px; }
 	nav { font-size: 2rem; }
-	nav span.navLink a { margin: auto; }
 	section.inlineBlock article { width: 680px; }
 	section.inlineBlock aside { width: 280px; }
 }
