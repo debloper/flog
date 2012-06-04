@@ -109,7 +109,7 @@ section {
 }
 section article { margin: 0 auto 2rem; }
 section aside { padding: 0 1rem; }
-article h2 { padding: 0 1rem; }
+article h2 { margin: auto 1rem 1rem; }
 footer { text-align: center; }
 
 /* 3. ID & Class */
