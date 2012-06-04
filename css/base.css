@@ -21,7 +21,6 @@ body {
 	width:				100%;
 	margin:				0;
 	padding:			0;
-	font-size:			16px;
 	font-family:		"Open Sans", Sans-serif;
 	overflow-y:			scroll;
 	-webkit-transform:	translateZ(0);
@@ -60,7 +59,7 @@ body > * {
 	margin:				auto;
 }
 header {
-	padding:			4rem 0 0;
+	padding:			4rem 0 2rem;
 	text-align:			center;
 	font-family:		"Open Sans Condensed", Sans-serif;
 }
@@ -75,14 +74,19 @@ hgroup h1 {
 	text-transform:		uppercase;
 }
 nav {
-	position:			relative;
+	padding:			2px 0;
+	background-image:	-webkit-linear-gradient(left, rgba(255, 255, 255, 0), #E73,  rgba(255, 255, 255, 0));
+	background-image:	-moz-linear-gradient(left, rgba(255, 255, 255, 0), #E73,  rgba(255, 255, 255, 0));
+	background-image:	linear-gradient(left, rgba(255, 255, 255, 0), #E73,  rgba(255, 255, 255, 0));
 }
-nav a {
+nav div {
+	text-align:			center;
+	background-color:	#fff;
+}
+nav  .navLink {
 	width:				3em;
 	margin:				auto 0.5rem;
 	text-align:			center;
-	border:				solid #E73;
-	border-width:		1px 0;
 	display:			inline-block;
 }
 section {
@@ -105,6 +109,10 @@ footer {
 }
 
 /* 3. ID & Class */
+#copyleft {
+	margin:				auto auto 2rem;
+	font-size:			0.8rem;
+}
 .share iframe {
 	float:				right;
 	margin-top:			-3px;
@@ -149,7 +157,6 @@ article a:nth-child(even) {
 }
 #copyleft span {
 	font-size:			120%;
-	margin:				1em auto;
 	font-weight:		bold;
 	display:			inline-block;
 	-webkit-transform:	scaleX(-1);
