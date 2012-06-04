@@ -21,6 +21,7 @@ body {
 	width:				100%;
 	margin:				0;
 	padding:			0;
+	min-width:			320px;
 	font-family:		"Open Sans", Sans-serif;
 	overflow-y:			scroll;
 	-webkit-transform:	translateZ(0);
