@@ -18,10 +18,11 @@
 	box-sizing:      border-box;
 }
 body {
+	color:				#333;
 	width:				100%;
 	margin:				0;
 	padding:			0;
-	font-size:			16px;
+	min-width:			320px;
 	font-family:		"Open Sans", Sans-serif;
 	overflow-y:			scroll;
 	-webkit-transform:	translateZ(0);
@@ -40,6 +41,7 @@ a:hover {
 }
 h1, h2, h3, h4, h5, h6 {
 	margin:				0;
+	text-shadow:		0 0 1px #666;
 	font-family:		"Open Sans Condensed", Sans-serif;
 }
 
@@ -71,7 +73,7 @@ hgroup h1 {
 	font-size:			4rem;
 	line-height:		3rem;
 	margin-bottom:		1rem;
-	letter-spacing:		-4px;
+	letter-spacing:		-0.25rem;
 	text-transform:		uppercase;
 }
 nav {
@@ -97,12 +99,10 @@ section {
 	-ms-text-justify:	distribute-all-lines;
 	text-justify:		distribute-all-lines;
 }
-section aside {
-	padding-left:		1rem;
-}
-footer {
-	text-align:			center;
-}
+section article { margin: 0 auto 2rem; }
+section aside { padding: 0 1rem; }
+article h2 { padding: 0 1rem; }
+footer { text-align: center; }
 
 /* 3. ID & Class */
 #copyleft {
