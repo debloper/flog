@@ -170,39 +170,25 @@ footer { text-align: center; }
 /* 5. Media Queries */
 @media screen and (max-width: 449px) {
 	body > * { width: 100%; }
-	nav {
-		font-size:		1rem;
-		text-align:		center;
-	}
-	section.inlineBlock article { width: 100%; }
-	section.inlineBlock aside { display: none; }
+	nav { font-size: 1rem; }
+	nav span.navLink a { margin: auto 4px; }
+	section.inlineBlock > * { display: block; }
 }
 @media screen and (min-width: 450px) {
 	body > * { width: 100%; }
-	nav {
-		font-size:		1.5rem;
-		text-align:		center;
-	}
-	section.inlineBlock article { width: 100%; }
-	section.inlineBlock aside { display: none; }
+	nav { font-size: 1.5rem; }
+	nav span.navLink a { margin: auto 4px; }
+	section.inlineBlock > * { display: block; }
 }
 @media screen and (min-width: 700px) {
-	nav {
-		font-size:		2rem;
-		text-align:		center;
-	}
-	section.inlineBlock article { width: 70%; }
-	section.inlineBlock aside {
-		width:			25%;
-		display:		inline-block;
-	}
+	nav { font-size: 2rem; }
+	nav span.navLink a { margin: auto; }
+	section.inlineBlock > * { display: inline-block; }
+	section.inlineBlock article { width: 65%; }
+	section.inlineBlock aside { width: 35%; }
 }
 @media screen and (min-width: 1000px) {
 	body > * { width: 960px; }
-	nav {
-		top:			-4rem;
-		text-align:		justify;
-	}
 	section.inlineBlock article { width: 680px; }
 	section.inlineBlock aside { width: 280px; }
 }
