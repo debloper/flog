@@ -124,6 +124,27 @@ ASCII art, in here -->
 		dsq.src = 'http://blogdebsio.disqus.com/embed.js';
 		d.getElementsByTagName('head')[0].appendChild(dsq);
 	})(document);
+
+	// Universal Font Size Setter - works like a charm with REM units.
+	(function () {
+		var items = document.querySelectorAll("span.navLink a")
+		,	html = document.getElementsByTagName("html")[0]
+		,	action = function ( event ) {
+				localStorage.setItem("fontSize", this.dataset.size);
+				html.style.fontSize = localStorage.getItem("fontSize");
+				event.preventDefault();
+			};
+
+		// Attach the event-listener to all the target items
+		for (var i in items) {
+			items[i].addEventListener("click", action, false);
+		}
+
+		// If user has ever set the size, preset with that preference
+		if ( localStorage.getItem("fontSize") ) {
+			html.style.fontSize = localStorage.getItem("fontSize");
+		}
+	})();
 	</script>
 
 </body>
