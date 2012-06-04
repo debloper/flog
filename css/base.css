@@ -98,9 +98,12 @@ footer {
 }
 
 /* 3. ID & Class */
+#copyleft {
+	margin:				auto auto 2rem;
+	font-size:			0.8rem;
+}
 #copyleft span {
 	font-size:			120%;
-	margin:				1em auto;
 	font-weight:		bold;
 	display:			inline-block;
 	-webkit-transform:	scaleX(-1);
