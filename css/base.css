@@ -76,6 +76,14 @@ hgroup h1 {
 	letter-spacing:		-0.25rem;
 	text-transform:		uppercase;
 }
+hgroup h2 {
+	font-size:			2rem;
+	line-height:		2rem;
+}
+hgroup h3 {
+	font-size:			1.2rem;
+	line-height:		1.2rem;
+}
 nav {
 	padding:			2px 0;
 	background-image:	-webkit-linear-gradient(left, rgba(255, 255, 255, 0), #E73,  rgba(255, 255, 255, 0));
