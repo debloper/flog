@@ -18,6 +18,7 @@
 	box-sizing:			border-box;
 }
 body {
+	color:				#333;
 	width:				100%;
 	margin:				0;
 	padding:			0;
@@ -40,6 +41,7 @@ a:hover {
 }
 h1, h2, h3, h4, h5, h6 {
 	margin:				0;
+	text-shadow:		0 0 1px #666;
 	font-family:		"Open Sans Condensed", Sans-serif;
 }
 
@@ -71,8 +73,16 @@ hgroup h1 {
 	font-size:			4rem;
 	line-height:		3rem;
 	margin-bottom:		1rem;
-	letter-spacing:		-4px;
+	letter-spacing:		-0.25rem;
 	text-transform:		uppercase;
+}
+hgroup h2 {
+	font-size:			2rem;
+	line-height:		2rem;
+}
+hgroup h3 {
+	font-size:			1.2rem;
+	line-height:		1.2rem;
 }
 nav {
 	padding:			2px 0;
@@ -95,22 +105,15 @@ section {
 	-ms-text-justify:	distribute-all-lines;
 	text-justify:		distribute-all-lines;
 }
-section article {
-	margin:				0 auto 2rem;
-}
+section article { margin: 0 auto 2rem; }
 article a {
 	padding:			8px 16px;
 	display:			block;
 }
-article a time {
-	float:				right;
-}
-section aside {
-	padding:			0 1rem;
-}
-footer {
-	text-align:			center;
-}
+article a time { float: right; }
+article h2 { padding: 0 1rem; }
+section aside { padding: 0 1rem; }
+footer { text-align: center; }
 
 /* 3. ID & Class */
 #copyleft {
