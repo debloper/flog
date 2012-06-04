@@ -87,8 +87,8 @@ nav div {
 nav  .navLink {
 	width:				3em;
 	margin:				auto 0.5rem;
-	text-align:			center;
 	display:			inline-block;
+	text-align:			center;
 }
 section {
 	text-align: 		justify;
@@ -170,27 +170,21 @@ article a:nth-child(even) {
 /* 5. Media Queries */
 @media screen and (max-width: 449px) {
 	body > * { width: 100%; }
-	nav {
-		font-size:		1rem;
-		text-align:		center;
-	}
+	nav { font-size: 1rem; }
+	nav span.navLink a { margin: auto 4px; }
 	section.inlineBlock article { width: 100%; }
 	section.inlineBlock aside { display: none; }
 }
 @media screen and (min-width: 450px) {
 	body > * { width: 100%; }
-	nav {
-		font-size:		1.5rem;
-		text-align:		center;
-	}
+	nav { font-size: 1.5rem; }
+	nav span.navLink a { margin: auto 4px; }
 	section.inlineBlock article { width: 100%; }
 	section.inlineBlock aside { display: none; }
 }
 @media screen and (min-width: 700px) {
-	nav {
-		font-size:		2rem;
-		text-align:		center;
-	}
+	nav { font-size: 2rem; }
+	nav span.navLink a { margin: auto; }
 	section.inlineBlock article { width: 70%; }
 	section.inlineBlock aside {
 		width:			25%;
@@ -199,10 +193,8 @@ article a:nth-child(even) {
 }
 @media screen and (min-width: 1000px) {
 	body > * { width: 960px; }
-	nav {
-		top:			-4rem;
-		text-align:		justify;
-	}
+	nav { font-size: 2rem; }
+	nav span.navLink a { margin: auto; }
 	section.inlineBlock article { width: 680px; }
 	section.inlineBlock aside { width: 280px; }
 }
