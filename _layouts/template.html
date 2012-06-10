@@ -78,8 +78,9 @@ ASCII art, in here -->
 					Follow @Debloper
 				</a>
 			</div>
-{{ content }}
+{{ content }}{% if page.url != "/" %}
 		<div id="disqus_thread"></div>
+{% endif %}
 		</article><aside>
 			<div class="portal">
 				<div>Featured Posts</div>
