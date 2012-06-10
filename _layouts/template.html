@@ -79,6 +79,8 @@ ASCII art, in here -->
 				</a>
 			</div>
 {{ content }}{% if page.url != "/index.html" %}
+		<a	href="http://blog.debs.io{{ post.url }}#disqus_thread"
+			data-disqus-identifier="{{ page.url | replace:'/','' }}"></a>
 		<div id="disqus_thread"></div>
 {% endif %}
 		</article><aside>
@@ -124,7 +126,8 @@ ASCII art, in here -->
 	})( document, "script", "twitter-wjs");
 
 	// Disqus Commnet Thread Integration
-	var disqus_identifier = "{{ page.url | replace:'/','' }}";
+	var disqus_identifier = "{{ page.url | replace:'/','' }}"
+	,	disqus_url = "http://blog.debs.io{{ page.url }}";
 	(function( d ) {
 		var dsq = d.createElement('script');
 		dsq.async = true;
