@@ -25,6 +25,7 @@ body {
 	min-width:			320px;
 	font-family:		"Open Sans", Sans-serif;
 	overflow-y:			scroll;
+	background:			#eee;
 	-webkit-transform:	translateZ(0);
 	-moz-transform:		translateZ(0);
 	-ms-transform:		translateZ(0);
@@ -94,7 +95,7 @@ nav {
 }
 nav div {
 	text-align:			center;
-	background-color:	#fff;
+	background:			#eee;
 }
 nav .navLink {
 	width:				3em;
@@ -147,6 +148,7 @@ footer { text-align: center; }
 	padding:			0.5rem 0.5rem 0.5rem 1rem;
 	display:			block;
 	font-size:			0.8rem;
+	background:			#fff;
 }
 .share iframe {
 	float:				right;
