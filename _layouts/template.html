@@ -124,9 +124,9 @@ ASCII art, in here -->
 	})( document, "script", "twitter-wjs");
 
 	// Disqus Commnet Thread Integration
+	var disqus_identifier = "{{ page.url | replace:'/','' }}";
 	(function( d ) {
 		var dsq = d.createElement('script');
-		var disqus_identifier = "{{ page.url | replace:'/','' }}";
 		dsq.async = true;
 		dsq.src = 'http://blogdebsio.disqus.com/embed.js';
 		d.getElementsByTagName('head')[0].appendChild(dsq);
