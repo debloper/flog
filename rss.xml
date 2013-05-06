@@ -7,7 +7,7 @@ layout: nil
 	<title>Deb's Personal Weblog</title>
 	<link>http://blog.debs.io</link>
 	<lastBuildDate>
-		{{ site.time | %a, %d %b %Y %H:%M:%S %Z }}
+		{{ site.time | date: "%a, %d %b %Y %H:%M:%S %Z" }}
 	</lastBuildDate>
 	<ttl>3600</ttl>
 
@@ -17,7 +17,7 @@ layout: nil
 		<guid>http://blog.debs.io{{ post.url }}</guid>
 		<link>http://blog.debs.io{{ post.url }}</link>
 		<pubDate>
-			{{ post.date | date: %a, %d %b %Y %H:%M:%S %Z }}
+			{{ post.date | date: "%a, %d %b %Y %H:%M:%S %Z" }}
 		</pubDate>
 		<description>
 			{{ post.content | strip_html | truncatewords: 100 }}
