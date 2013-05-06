@@ -4,30 +4,30 @@ layout: nil
 <?xml version="1.0" encoding="utf-8" ?>
 <feed	xmlns="http://www.w3.org/2005/Atom"
 		xml:lang="en"
-		xml:base="http://blog.debs.io">
+		xml:base="http://old.debs.io/flog">
 
 	<title>Deb's Personal Weblog</title>
-	<link href="http://blog.debs.io"/>
+	<link href="http://old.debs.io/flog"/>
 	<link	rel="self"
 			type="application/atom+xml"
 			href="/atom.xml"/>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
-	<id>http://blog.debs.io/atom.xml</id>
+	<id>http://old.debs.io/flog/atom.xml</id>
 	<author>
 		<name>Soumya Deb</name>
 	</author>
 
 	{% for post in site.posts %}
 	<entry>
-		<id>http://blog.debs.io{{ post.url }}</id>
+		<id>http://old.debs.io/flog{{ post.url }}</id>
 		<link	rel="alternate"
 				type="text/html"
-				href="http://blog.debs.io{{ post.url }}"/>
+				href="http://old.debs.io/flog{{ post.url }}"/>
 		<title>{{ post.title }}</title>
 		<updated>{{ post.date | date_to_xmlschema }}</updated>
 		<summary type="text/html">
 			{{ post.content | strip_html | truncatewords: 100 }}
-			[<a href="http://blog.debs.io{{ post.url }}">Read More</a>]
+			[<a href="http://old.debs.io/flog{{ post.url }}">Read More</a>]
 		</summary>
 	</entry>
 	{% endfor %}
